@@ -49,7 +49,5 @@
 
 [F1TENTH](https://f1tenth.org/)
 
-[Riders.ai](https://riders.ai/en)
-
 [Think autonomous](https://courses.thinkautonomous.ai/)
 
