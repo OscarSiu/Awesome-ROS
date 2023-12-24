@@ -6,27 +6,36 @@ Initiated by Oscar Siu
 
 
 
-**Prerequisite**
+**Prerequisite:** 
 Ubuntu 20.04
 
 ## Installation
 [Ubuntu install of ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu)
+
 `rosversion -d`
 
 search for usable package
+
 `apt search ros-noetic` OR `sudo apt-get install ros-noetic-[tab]`
 
 ### Filesystem tools
+
 `rospack`
+
 `roscd`
+
 `rosls`
+
 `rosed`
+
 `rosdep`
 
 ## Workspace Environment Setup
+
 `roscore` OR skip to `roslaunch`
 
 Edit .bashrc file
+
 ```
 export EDITOR='nano -w'
 export LIBGL_ALWAYS_INDIRECT=0
@@ -35,12 +44,15 @@ export LIBGL_ALWAYS_SOFTWARE=1
 source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
 ```
+
  `source ~/.bashrc`
 
 Check workspace
+
 `echo $ROS_PACKAGE_PATH`
 
 Build package
+
 ```
 source /opt/ros/noetic/setup.bash
 mkdir -p ~/catkin_ws/src
@@ -51,7 +63,8 @@ catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 source devel/setup.bash
 ```
 
-For every package, edit ==CMakelist.txt== and ==package.xml==
+For every package, edit **CMakelist.txt** and **package.xml**
+
 `catkin_create_pkg [package name] std_msgs rospy roscpp`
 
 ```
@@ -62,49 +75,69 @@ catkin config
 
 ## Turtlebot Tutorial
 Install tutorials package
+
 `sudo apt-get install ros-noetic-ros-tutorials`
 
 Run turtlesim
+
 `roscore / rosmaster --core`
+
 **`rosrun turtlesim turtlesim_node __name:=my_turtle`**
 
 
 Tele-operation
+
 `rosrun turtlesim turtle_teleop_key`
 
 ### ROS node 
+
 `rosnode list`
+
 `rosnode ping my_turtle`
 
 ###  ROS Topic	
+
 `rosrun rqt_graph rqt_graph`
 
+
 `rostopic echo /turtle1/cmd_vel`
+
 `rostopic type /turtle1/cmd_vel`
+
 `rosmsg show geometry_msgs/Twist`
 
 Read laser scan data
+
 `rostopic echo -n1 /scan`
 
 **Publisher**
+
 `rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -r 1 -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'`
 
 ### Manipulation
+
 `rosservice call`
+
 `rosparam set`
 
 Debug
+
 `rosrun rqt_console rqt_console`
+
 `rosrun rqt_logger_level rqt_logger_level`
 
 Launch
+
 `roslaunch beginner_tutorials turtlemimic.launch`
 
 Record published files
+
 `rosbag record -a`
+
 `time rosbag play info [bag name]`
 
 Troubleshoot
+
 `roswtf`
 
 ## Turtlebot3
