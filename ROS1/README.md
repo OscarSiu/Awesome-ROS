@@ -172,8 +172,11 @@ catkin_make
 `rosrun velodyne_laserscan velodyne_laserscan_node`
 
 https://bitbucket.org/DataspeedInc/velodyne_simulator/src/master/
+
 https://codediversion.wordpress.com/tag/lidar/
+
 ## Autonomous Obstacle Avoidance Robot
+
 `roslaunch testbot_description testbot_gazebo.launch`
 
 Tele-Op control
@@ -185,9 +188,11 @@ Autonomous mode
 `rostopic echo /cmd_vel`
 
 https://www.youtube.com/watch?v=wcXuUG4BWAU
+
 https://github.com/vibhuthasak/Obstacle_Avoidance_ROS
 
 ## USB Camera package
+
 https://devblogs.microsoft.com/commandline/connecting-usb-devices-to-wsl/
 
 ```
@@ -201,15 +206,19 @@ rqt_image_view image:=/image_raw
 ```
 
 ## AgileX Robotics Limo
+
 Start the base node for limo
+
 `roslaunch limo_bringup limo_start.launch`
 
 Start the keyboard tele-op node
+
 `roslaunch limo_bringup limo_teleop_keyboard.launch`
 
 https://github.com/agilexrobotics/limo_ros
 
 ydlidar package
+
 https://github.com/YDLIDAR/ydlidar_ros
 
 
@@ -249,6 +258,7 @@ rostopic echo /test
 URDF
 
 https://wiki.ros.org/urdf/Tutorials
+
 http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/doc/getting_started/getting_started.html
 
 [Navigation](http://wiki.ros.org/navigation/Tutorials)
@@ -259,6 +269,7 @@ http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/doc/getting_started/get
 
 ## Successful built
 https://github.com/richardw05/mybot_ws
+
 https://github.com/gaunthan/Turtlebot2-On-Melodic
 
 
