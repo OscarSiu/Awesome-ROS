@@ -180,9 +180,11 @@ https://codediversion.wordpress.com/tag/lidar/
 `roslaunch testbot_description testbot_gazebo.launch`
 
 Tele-Op control
+
 `roslaunch testbot_description teleop.launch`
 
 Autonomous mode
+
 `rosrun testbot_description sensor_data_listener.py`
 
 `rostopic echo /cmd_vel`
