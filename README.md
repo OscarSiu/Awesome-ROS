@@ -5,15 +5,9 @@
 ### Tutorials
 [Gazebo](https://classic.gazebosim.org/tutorials?cat=guided_i)
 
-[Gazebo PX4](https://dev.px4.io/v1.11_noredirect/en/simulation/gazebo_worlds.html)
-
-[Automatic addison](https://automaticaddison.com/useful-world-files-for-gazebo-and-ros-2-simulations/)
-
 [MoveIt](https://moveit.picknik.ai/humble/index.html)
 
 [Onshape-to-robot](https://onshape-to-robot.readthedocs.io/en/latest/)
-
-[Sensor fusion](https://gitlab.com/archerindigo/gnss-rtk-imu-fusion)
 
 [The Construct](https://app.theconstructsim.com/)
 
